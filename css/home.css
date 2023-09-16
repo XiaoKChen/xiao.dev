@@ -1,0 +1,316 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css" ;
+
+@font-face {
+
+    font-family: 'Blokee' ;
+    src: url( ../fonts/Blokee-axJx9.ttf ) format( 'truetype' ) ;
+
+}
+
+@font-face {
+
+    font-family: 'Hack' ;
+    src: url( ../fonts/Hack/HackNerdFont-Regular.ttf ) format( 'truetype' ) ;
+
+}
+
+@media (max-width: 900px) {
+
+    .helloWorld {
+
+        font-size: 1rem ;
+        text-align: center ;
+        flex-direction: column ;
+
+    }
+
+    .aboutMe, .myInterest, .contactMe {
+
+        font-size: 1rem ;
+        text-align: center ;
+
+    }
+
+    section .text-container, .aboutMeText {
+
+        flex-direction: column ;
+
+    }
+
+    .text-box {
+
+        font-size: 1rem ;
+
+    }
+
+}
+
+section {
+
+    min-height: 100vh ;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+
+}
+
+.reveal {
+
+    position: relative ;
+    transform: translateY(150px) ;
+    opacity: 0 ;
+    transition: 1s all ease ;
+
+}
+
+.reveal.active {
+
+    transform: translateY(0) ;
+    opacity: 1 ;
+
+}
+
+
+
+/*************************************************************************************
+************************************* helloWorld *************************************
+**************************************************************************************/
+.helloWorld {
+
+    font-size: 150px ;
+    font-family: 'Blokee', monospace ;
+    background-color: white ;
+
+}
+
+@keyframes fadeIn {
+
+    0% {
+
+        text-shadow: 0 0 30px white ;
+
+    }
+
+    100% {
+
+        text-shadow: 0 0 30px black ;
+
+    }
+
+}
+
+span {
+
+    animation: fadeIn linear 6s ;
+    animation-iteration-count: 1 ;
+    animation-fill-mode: forwards ;
+    display: inline-block ;
+    color: white ;
+
+}
+
+span:nth-child( 1 ) {
+
+    animation-delay: 0.5s ;
+
+
+}
+
+span:nth-child( 2 ) {
+
+    animation-delay: 1.0s ;
+
+}
+
+span:nth-child( 3 ) {
+
+    animation-delay: 1.5s ;
+
+}
+
+span:nth-child( 4 ) {
+
+    animation-delay: 2.0s ;
+
+}
+
+span:nth-child( 5 ) {
+
+    animation-delay: 2.5s ;
+
+}
+
+span:nth-child( 6 ) {
+
+    animation-delay: 3.0s ;
+
+}
+
+span:nth-child( 7 ) {
+
+    animation-delay: 0.5s ;
+
+}
+
+span:nth-child( 8 ) {
+
+    animation-delay: 1.0s ;
+
+}
+
+span:nth-child( 9 ) {
+
+    animation-delay: 1.5s ;
+
+}
+
+span:nth-child( 10 ) {
+
+    animation-delay: 2.0s ;
+
+}
+
+span:nth-child( 11 ) {
+
+    animation-delay: 2.5s ;
+
+}
+/*************************************************************************************
+************************************* helloWorld *************************************
+**************************************************************************************/
+
+
+
+/*************************************************************************************
+*************************************** aboutMe **************************************
+**************************************************************************************/
+.aboutMeSEL {
+
+    background-color: black ;
+
+}
+
+.aboutMe {
+
+    font-size: 50px;
+    font-family: 'Blokee', monospace ;
+    color: white ;
+
+}
+
+.aboutMeText {
+
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+
+}
+
+#me {
+
+    border-radius: 50% ;
+
+}
+/*************************************************************************************
+*************************************** aboutMe **************************************
+**************************************************************************************/
+
+
+
+/*************************************************************************************
+************************************* myInterest *************************************
+**************************************************************************************/
+.myInterestSEL {
+
+    background-color: white ;
+
+}
+
+.myInterest {
+
+    font-size: 50px ;
+    font-family: 'Blokee', monospace ;
+    color: black ;
+
+}
+/*************************************************************************************
+************************************* myInterest *************************************
+**************************************************************************************/
+
+
+
+/*************************************************************************************
+************************************** contactMe *************************************
+**************************************************************************************/
+.contactMeSEL {
+
+    background-color: black ;
+
+}
+
+.contactMe {
+
+    font-size: 50px ;
+    font-family: 'Blokee', monospace ;
+    color: white ;
+
+}
+
+.contactMeInfo {
+
+    display: flex ;
+    justify-content: space-evenly ;
+
+}
+/*************************************************************************************
+************************************** contactMe *************************************
+**************************************************************************************/
+
+
+
+.text-container{
+
+    display: flex ;
+
+}
+
+section .text-container .text-box {
+
+    margin: 20px ;
+    padding: 20px ;
+    background: black ;
+    color: white ;
+
+}
+
+section .text-container .text-box h3 {
+
+    color: white ;
+    font-size: 40px ;
+    font-family: 'Hack', monospace ;
+    text-align: center;
+    /*text-transform: uppercase;*/
+    margin-bottom: 10px ;
+
+}
+
+p {
+
+    color: white;
+    font-size: 35px ;
+    font-family: 'Hack', monospace ;
+
+}
+
+a {
+
+    text-decoration: none ;
+    color: white ;
+
+}
+
+a:hover {
+
+    opacity: .5 ;
+
+}
